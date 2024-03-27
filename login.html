@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="css/index.css">
+        <style>
+            body {
+             background-image: url("assets/recipe.jpg");
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: 100% 100%;
+            }
+    
+            .login-button {
+                background-color: #331bab; /* Blue*/
+            }
+    
+            .register-button {
+                background-color: #dd1010; /* Red */
+            }
+    
+            .custom-button {
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body><br>
+        <br>
+            <h1>Welcome to C&c Kitchen :)</h1>
+            <br><br>
+            <div class="container">
+            <form method="post" action="login.php">
+                <div class="login-form">
+                <div class="form-title">Please Login here </div>
+                <div class="form-input"><label>User email:</label>
+                <input name ="email"
+                 type="text"> <br><br>
+                <div class="form-input"> <label for="password">Password:&nbsp;&nbsp;</label> <input name ="password"
+               type="password">
+                <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" name="submit" value="Login" class="custom-button login-button"/>
+                 &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" value="Reset"/>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Register.html"><input type="button" value="Register" class="custom-button register-button"/></a>
+                </style>
+                    
+                </div>
+            </div>
+            </form>
+    </body>
+</html> 

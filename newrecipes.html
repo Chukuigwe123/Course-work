@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Recipe </title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <style>
+  .form-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-container label {
+    width: 100px;
+    display: inline-block;
+  }
+  
+  .form-container input[type="text"],
+  .form-container textarea {
+    width: calc(100% - 160px); /* Adjust as needed */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  .form-container input[type="submit"],
+  .form-container input[type="button"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .form-container input[type="submit"]:hover,
+  .form-container input[type="button"]:hover {
+    background-color: #0056b3;
+  }
+  
+</style>  
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+            <img src="./assets/WhatsApp Image 2024-03-11 at 17.05.12_221b2634.jpg" alt=" contact" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="home.html" class="nav-link"> home </a>
+          <a href="about.html" class="nav-link"> about </a>
+          <a href="contact.html" class="nav-link"> contact us </a>
+          <a href="recipes.html" class="nav-link"> recipes </a>
+          
+
+          <div class="nav-link contact-link">
+            <a href="login.html" class="btn"> log out </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+        <section class="contact-container">
+             <article class="contact-info">
+               <h3>Add a New Recipe here</h3>
+            
+               <div class="form-container">
+                <form method="post" action="addRecipe.php">
+                    <label for="chefname">Chef Name:</label>
+                    <input type="text" id="chefname" name="chefname" /><br><br>
+            
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" name="category" /><br><br>
+            
+                    <label for="RecipeName">Recipe Name:</label>
+                    <input type="text" id="RecipeName" name="RecipeName" /><br><br>
+            
+                    <label for="Ingredients">Ingredients:</label>
+                    <textarea id="Ingredients" name="Ingredients" rows="5" cols="45"></textarea><br><br>
+            
+                    <label for="Directions">Directions:</label>
+                    <textarea id="Directions" name="Directions" rows="10" cols="45"></textarea><br><br>
+            
+                    <input type="submit" name="submit" value="Submit" />
+                    <input type="button" value="Reset" />
+                </form>
+            </div>
+            
+                   
+          </article>
+          <article>
+            <br>
+                <h3>Search Recipe</h3>
+            
+              <form method="post" action="searchRecipe.php">
+                    <label>Recipe Name:</label>
+                    <input type="text" name="RecipeName" />
+                    <br><br>
+                    <input type="submit" name="submit" value="Search" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="Reset" />
+                    
+                </form>
+                
+                <br>
+                <br>
+                <h3>Edit Recipe</h3>
+    <form method="post" action="editRecipe.php">
+        <label>Recipe Name:</label>
+        <input type="text" name="RecipeName" />
+        <br><br>
+        <input type="submit" name="submit" value="Search to edit" />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Reset" />
+    </form>
+    <br>
+    <h3>Delete a Recipe here</h3>
+    <form method="post" action="deleteRecipe.php">
+        <label>Recipe Name:</label>
+        <input type="text" name="RecipeName" />
+        <br><br>
+        <input type="submit" name="submit" value="Delete" />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Reset" />
+    </form>
+    
+          </article>
+</section>
+        
+
+
+
+           
+
+
+
+
+
+
+     <!-- featured recipes -->
+     <section class="featured-recipes">
+        <h5 class="featured-title">Look At This Awesome Recipes!</h5>
+        <div class="recipes-list">
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="./assets/asaro-yam-porridge-recipe-image-2.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Nigerian yam-porridge</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="./assets/dodo-gizzard.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Nigerian dodo-gizzard</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="./assets/Egusi-soup.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Nigerian Egusi-soup</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+        </div>
+      </section>
+    </main>
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <!-- end of main -->
+    <!-- footer -->
+    <footer>
+      <script src="./js/app.js"></script>
+      <section class="footer">  
+      <div class="social">
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> </a>
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> </a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i> </a>
+          <a href="https://www.snapchat.com/"><i class="fab fa-snapchat"></i> </a>
+      </div>
+      <ul>
+          <li>
+              <a href="#">Home</a>
+          </li>
+          <li>
+              <a href="#">Services</a>
+          </li>
+          <li>
+              <a href="#">About</a>
+          </li>
+          <li>
+              <a href="#">Terms</a>
+          </li>
+          <li>
+              <a href="#">Privacy Policy</a>
+          </li>
+          </ul>
+        
+  </section>
+      </footer>
+    </body>
+  </html>
+  

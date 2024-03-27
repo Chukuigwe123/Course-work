@@ -1,0 +1,29 @@
+
+    /*login css code */
+    * {
+      margin:0px;
+      padding:0px;
+      box-sizing:border-box;
+    }
+   
+    .login-form .form-title {
+      text-align:center;
+      font-size:30px;
+      font-weight:600;
+      margin:20px 0px 30px;
+      color:#111;
+    }
+    .login-form .form-input {
+      margin:10px 0px;
+    }
+
+    .login-form .form-input input {
+      width:100%;
+      padding:10px;
+      outline: none;
+      border-radius: 4px;
+      border:1px solid #5f0b0b;
+      font-size:15px;
+    }
+     
+    
