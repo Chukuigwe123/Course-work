@@ -1,11 +1,6 @@
 
     /*login css code */
-    body {
-      background-image: url("assets/recipe.jpg");
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: 100% 100%;
-     }
+    
     * {
     
       margin:0px;
