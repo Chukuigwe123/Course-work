@@ -1,61 +1,9 @@
-<!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>C&c</title>
-        <link rel="stylesheet" href="./css/normalize.css">
-       <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    
-    
-    <!--Font Awesome cdn-->
-    <link rel="stylesheet"href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css>
-    
-      </head>
-      <body>
-        <!-- nav  -->
-        <nav class="navbar">
-          <div class="nav-center">
-            <div class="nav-header">
-              <a href="home.html" class="nav-logo">
-                <img src="./assets/WhatsApp Image 2024-03-11 at 17.05.12_221b2634.jpg" alt="C%c Kitchen">
-              </a>
-              <button class="nav-btn btn">
-                <i class="fas fa-align-justify"></i>
-              </button>
-            </div>
-            <div class="nav-links">
-              <a href="#" class="nav-link"> home </a>
-              <a href="login.html" class="nav-link"> about </a>
-              <a href="login.html" class="nav-link"> contact us </a>
-              <a href="login.html" class="nav-link"> recipes </a>
-            
-              <!-- Search bar -->
-              <form method="post" action="searchRecipe.php">
-                <input type="text" name="RecipeName" placeholder ="Search recipes...">
-                <input type="submit" name="submit" value="Search" />
-                &nbsp;&nbsp;&nbsp;&nbsp;
-          
-                
-              </form>
-         
-          <!-- End of Search bar -->
-    <br>
-    <br>
-    <br>
-              <div class="nav-link contact-link">
-            <a href="Register.html" class="btn"> Register </a>
-            <a href="login.html" class="btn"> login </a>
-    
-              </div>
-            </div>
-          </div>
-        </nav>
-        <!-- end of nav -->
-        <!-- main -->
-        <main class="page">
+<?php 
+include 'header.php';
+?>
+<main>
+
+<main class="page">
           <!-- header -->
           <header class="hero">
             <div class="hero-container">
@@ -67,12 +15,14 @@
     </div>
               </div>
             </div>
-          </header>
+        </div>
+    </div>
+    </header>
             <!-- end of tag container -->
             <!-- recipes list -->
             <div class="recipes-list">
               <!-- single recipe -->
-              <a href="single-recipe.html" class="recipe">
+              <a href="single-recipe.php" class="recipe">
                 <img
                   src="./assets/Egusi-soup.jpg"
                   class="img recipe-img"
@@ -180,43 +130,6 @@
           </section>
           
         </main>
-       
-           
-    
-        <!-- end of main -->
-        <!-- footer -->
-        <footer>
-        <script src="./js/app.js"></script>
-        <section class="footer">  
-        <div class="social">
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> </a>
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> </a>
-            <a href="https://twitter.com/"><i class="fab fa-twitter"></i> </a>
-            <a href="https://www.snapchat.com/"><i class="fab fa-snapchat"></i> </a>
-        </div>
-        <ul>
-            <li>
-    
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Terms</a>
-            </li>
-            <li>
-                <a href="#">Privacy Policy</a>
-            </li>
-            </ul>
-          
-    </section>
-        </footer>
-      </body>
-    </html>
-    
-</body>
-</html>
+
+
+<?php include 'footer.php'; ?>

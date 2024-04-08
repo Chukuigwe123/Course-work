@@ -23,16 +23,16 @@
       <div class="nav-center">
         <div class="nav-header">
           
-            <img src="./assets/WhatsApp Image 2024-03-11 at 17.05.12_221b2634.jpg" alt="C%c Kitchen">
+            <img src="./assets/logo2.jpg" alt="C%c Kitchen">
         </a>
           <button class="nav-btn btn">
             <i class="fas fa-align-justify"></i>
           </button>
         </div>
         <div class="nav-links">
-          <a href="index.html" class="nav-link"> home </a>
-          <a href="index.html" class="nav-link"> about </a>
-          <a href="index.html" class="nav-link"> contact us </a>
+          <a href="index.php" class="nav-link"> home </a>
+          <a href="index.php" class="nav-link"> about </a>
+          <a href="index.php" class="nav-link"> contact us </a>
           
           </div>
         </div>

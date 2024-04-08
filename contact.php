@@ -1,42 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact us </title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <!-- main css -->
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <!-- nav  -->
-    <nav class="navbar">
-      <div class="nav-center">
-        <div class="nav-header">
-            <img src="./assets/WhatsApp Image 2024-03-11 at 17.05.12_221b2634.jpg" alt=" contact" />
-          </a>
-          <button class="nav-btn btn">
-            <i class="fas fa-align-justify"></i>
-          </button>
-        </div>
-        <div class="nav-links">
-          <a href="home.html" class="nav-link"> home </a>
-          <a href="about.html" class="nav-link"> about </a>
-          <a href="contact.html" class="nav-link"> contact us </a>
-          <a href="recipes.html" class="nav-link"> recipes </a>
+<?php include 'header.php'; 
 
-          <div class="nav-link contact-link">
-            <a href="login.html" class="btn"> log out </a>
-          </div>
-        </div>
-      </div>
-    </nav>
+// At the beginning of the chef.php or in the <head> section, you can add this PHP code
+if (isset($_GET['success']) && $_GET['success'] == '1') {
+    echo '<script>alert("Message Sent!");</script>';
+    // Clear the message to prevent it from being displayed on refresh or navigation
+    unset($_GET['success']);
+}
+
+?>
+<main>
     <!-- end of nav -->
     <main class="page">
      <section class="contact-container">
@@ -128,38 +100,8 @@
 
 
 
-    <!-- footer -->
-    <!-- end of main -->
-    <!-- footer -->
-    <footer>
-      <script src="./js/app.js"></script>
-      <section class="footer">  
-      <div class="social">
-          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> </a>
-          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> </a>
-          <a href="https://twitter.com/"><i class="fab fa-twitter"></i> </a>
-          <a href="https://www.snapchat.com/"><i class="fab fa-snapchat"></i> </a>
-      </div>
-      <ul>
-          <li>
-              <a href="#">Home</a>
-          </li>
-          <li>
-              <a href="#">Services</a>
-          </li>
-          <li>
-              <a href="#">About</a>
-          </li>
-          <li>
-              <a href="#">Terms</a>
-          </li>
-          <li>
-              <a href="#">Privacy Policy</a>
-          </li>
-          </ul>
-        
-  </section>
-      </footer>
-    </body>
-  </html>
+   
   
+
+</main>
+<?php include 'footer.php'; ?>
